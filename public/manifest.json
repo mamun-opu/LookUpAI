@@ -4,20 +4,17 @@
   "version": "1.0.0",
   "description": "AI-powered contextual lookup using DeepSeek",
   "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    
   },
   "action": {
     "default_popup": "popup/popup.html",
     "default_icon": {
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png"
+      
     }
   },
   "permissions": ["activeTab", "contextMenus", "storage", "scripting"],
   "background": {
-    "service_worker": "../src/background/service-worker.js",
+    "service_worker": "background/service-worker.js",
     "type": "module"
   },
   "content_scripts": [{
