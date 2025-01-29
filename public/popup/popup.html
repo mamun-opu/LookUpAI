@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LookUpAI</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="../src/assets/styles/global.css">
 </head>
 <body>
-    <textarea id="queryInput"></textarea>
-    <button id="askAI">Ask</button>
-    <div id="result"></div>
-    <script src="popup.js"></script>
+  <div class="container">
+    <textarea id="queryInput" placeholder="Edit your query..."></textarea>
+    <button id="submitBtn" class="primary-btn">Ask AI</button>
+    <div id="resultContainer" class="result-area"></div>
+  </div>
+  <script src="popup.js" type="module"></script>
 </body>
 </html>
